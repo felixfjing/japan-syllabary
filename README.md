@@ -1,4 +1,4 @@
-# meibiao-m
+# japan-syllabary
 
 ## Project setup
 ```
