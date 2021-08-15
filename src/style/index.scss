@@ -1,0 +1,27 @@
+img {
+  width: 100%;
+}
+
+.mh-title {
+  margin-bottom: 20px;
+
+  .span {
+    font-size: 35px;
+    font-weight: 700;
+
+    &::before {
+      content: '';
+      border-left: 10px solid $blue;
+      padding-right: 10px;
+    }
+  }
+}
+
+.box-shadow {
+  box-shadow: 0 8px 12px $gray-3;
+}
+
+.annotation-text {
+  font-size: 28px;
+  color: $gray-5;
+}
