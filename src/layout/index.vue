@@ -12,6 +12,7 @@
                 :placeholder="true"
                 :safe-area-inset-bottom="true">
       <van-tabbar-item replace to="/home" icon="home-o">首页</van-tabbar-item>
+      <van-tabbar-item replace to="/test" icon="brush-o">小测</van-tabbar-item>
       <van-tabbar-item replace to="/syllabary" icon="flower-o">音标</van-tabbar-item>
     </van-tabbar>
   </section>

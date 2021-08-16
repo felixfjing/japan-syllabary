@@ -1,4 +1,5 @@
 $blue: #7FC8A9;
+$red: #ee0a24;
 $gray-1: #f7f8fa;
 $gray-2: #f2f3f5;
 $gray-3: #ebedf0;
@@ -11,8 +12,8 @@ $gray-8: #323233;
 @import "./index.scss";
 
 * {
-  margin: 0;
-  padding: 0;
+  //margin: 0;
+  //padding: 0;
 }
 
 li {

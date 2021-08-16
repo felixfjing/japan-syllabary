@@ -20,7 +20,6 @@ const routes = [
         },
         component: () => import(/* webpackChunkName: "about" */ '../views/home.vue')
       },
-
       {
         path: '/syllabary',
         name: 'Syllabary',
@@ -28,6 +27,14 @@ const routes = [
           isAuth: true
         },
         component: () => import(/* webpackChunkName: "about" */ '../views/syllabary.vue')
+      },
+      {
+        path: '/test',
+        name: 'Test',
+        meta: {
+          isAuth: true
+        },
+        component: () => import(/* webpackChunkName: "about" */ '../views/test.vue')
       }
     ]
   },

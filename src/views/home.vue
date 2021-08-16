@@ -196,6 +196,7 @@ export default {
 
   .card-layout {
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: center;
     margin-top: 100px;

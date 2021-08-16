@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import {
   Button, Col, Row, Field, Uploader, Overlay, Icon, Popup, Toast, Dialog, Empty,
-  Tabbar, TabbarItem, Popover
+  Tabbar, TabbarItem, Popover, CellGroup, Checkbox
 } from 'vant'
 
 Vue.use(Button)
@@ -18,3 +18,5 @@ Vue.use(Empty)
 Vue.use(Tabbar)
 Vue.use(TabbarItem)
 Vue.use(Popover)
+Vue.use(CellGroup)
+Vue.use(Checkbox)
