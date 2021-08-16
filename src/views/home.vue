@@ -35,7 +35,8 @@
           <section class="card-footer">
             <span class="roman"
                   @click="visible = !visible">显示读音
-              <transition name="van-fade">
+              <transition name="van-fade"
+                          :duration="{enter:3000,leave:10}">
                 <span v-show="visible">{{ currentSyllable.value || '' }}</span>
               </transition>
             </span>
@@ -145,21 +146,23 @@ export default {
     refreshSyllable() {
       this.visible = false
 
-      const {key} = this.currentMode
-      switch (key) {
-        case 'all': {
-          this.currentSyllable = getRandomSyllable(this.allSyllable)
-          break
+      setTimeout(() => {
+        const {key} = this.currentMode
+        switch (key) {
+          case 'all': {
+            this.currentSyllable = getRandomSyllable(this.allSyllable)
+            break
+          }
+          case 'hiragana': {
+            this.currentSyllable = getRandomSyllable(this.hiraganaSyllable)
+            break
+          }
+          case 'katakana': {
+            this.currentSyllable = getRandomSyllable(this.katakanaSyllable)
+            break
+          }
         }
-        case 'hiragana': {
-          this.currentSyllable = getRandomSyllable(this.hiraganaSyllable)
-          break
-        }
-        case 'katakana': {
-          this.currentSyllable = getRandomSyllable(this.katakanaSyllable)
-          break
-        }
-      }
+      }, 30)
     },
     handleSelectMode(action) {
       this.currentMode = action
